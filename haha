@@ -894,7 +894,7 @@ task.spawn(function()
                         game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Nine ropes.. Polarized Light..", "All")
                         task.spawn(function()
                             wait(2)
-                            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Crow and Declaration.. Between Front and Back..・Ao", "All")
+                            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Crow and Declaration.. Between Front and Back..", "All")
                         end)
                     end
                     local oldcframe = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
