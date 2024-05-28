@@ -5,7 +5,7 @@ local Fluent = loadstring(game:HttpGetAsync("https://github.com/ActualMasterOogw
 local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua", true))()
 local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua", true))()
 local subtitlequotes = {
-    "Yowai Mo!"
+    "Sorry, TSB.."
 }
 local Window = Fluent:CreateWindow{
     Title = 'KadeHub 2.1.0',
@@ -30,7 +30,7 @@ local Tabs = {
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 local Options = Fluent.Options
-local ultname = "I HEARD YOU WERE STRONG"
+local ultname = "ALWAYS BET ON "..game.Players.LocalPlayer.Name
 local features = {
     ["AntiStun"] = false,
     ["RemoveAnim"] = false,
@@ -1026,7 +1026,7 @@ spawn(function()
         "Fuga (Open)",
     }
     local gojoquotes = {
-        "I alone, am The Honoured One.",
+        "I alone, am The Honored One.",
         "The world just feels so wonderful right now..",
         "Nah, I'd Win.",
         "If i would get hit by death counter, it would cause me a little trouble, but i would win.",
@@ -1040,6 +1040,8 @@ spawn(function()
         "deathcountererhaha thinks he can win with death counter.",
         "deathcountererhaha death countered me. But i refused.",
         "deathcountererhaha is an idiot.",
+	"Stand Proud, deathcountererhaha, you are strong.",
+	"Man, deathcountererhaha, im sure glad I'm not that guy!"
     }
     local ongoing = false
     while true do
