@@ -48,7 +48,7 @@ local features = {
     ["HonoredOne"] = false,
     ["SaitUltAlert"] = false,
     ["AntiMasterToggle"] = true, -- master toggle for anti moves basically
-    ["AntiDC"] = false, -- anti death counter
+    ["AntiDC"] = false, -- anti  counter
     ["AntiTF"] = false, -- anti table flip
     ["AntiSP"] = false, -- anti serious punch
     ["AntiOM"] = false, -- anti omni
@@ -1043,7 +1043,8 @@ spawn(function()
     }
     local ongoing = false
     while true do
-        if features.AntiDC == true and features.AntiMasterToggle == true and game.Players.LocalPlayer.Character.Humanoid then
+spawn(function()
+        if features.AntiDC == true and features.AntiMasterToggle == true and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
             for i,track in pairs(game.Players.LocalPlayer.Character.Humanoid.Animator:GetPlayingAnimationTracks()) do
                 if track.Animation.AnimationId == "rbxassetid://11343250001" and ongoing == false then
                     ongoing = true
@@ -1109,8 +1110,10 @@ spawn(function()
                 end
             end
         end
+end)
         task.wait()
     end
+
 end)
 
 local Toggle = Tabs.Saitama:AddToggle("AntiTF", {Title = "Anti Table Flip", Default = false })
